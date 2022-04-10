@@ -17,16 +17,18 @@ const container = document.getElementById('root')!;
 const root = createRoot(container);
 root.render(
   <React.StrictMode>
-    <CssBaseline />
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<App/>}>
-            <Route path='tasks' element={<Tasks/>}/>  
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </ThemeProvider>
+    <React.Fragment>
+      <CssBaseline />
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<App/>}>
+              <Route path='tasks' element={<Tasks/>}/>  
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </ThemeProvider>
+    </React.Fragment>
   </React.StrictMode>,
 );
 

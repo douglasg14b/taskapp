@@ -5,14 +5,12 @@ import { testTasks } from "../testdata";
 
 export default function Tasks() {
     return (
-      <Grid container sx={{ m: 4 }}>
-        <Grid item>
-          <Stack spacing={2}>
+      <Grid container sx={{ m: 4, width: 'auto', justifyContent: 'center' }}>
+          <Stack spacing={3} sx={{width: '100%'}}>
             {testTasks.map((task) => (
               <TaskCard task={task}/>
             ))}
           </Stack>
-        </Grid>
       </Grid>
     );
   }

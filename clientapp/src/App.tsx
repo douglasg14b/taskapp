@@ -11,9 +11,9 @@ import AppTopBar from './layout/appTopBar';
 
 function App() {
   return (
-    <Container disableGutters sx={{minHeight: '100vh', display: 'flex'}}>
+    <Container disableGutters sx={{ height: '100%', display: 'flex'}}>
       <Grid container direction="column">
-        <Grid item flexGrow="1" className='viewport'>
+        <Grid item flexGrow="1">
           <AppTopBar/>
           <Outlet/>
           

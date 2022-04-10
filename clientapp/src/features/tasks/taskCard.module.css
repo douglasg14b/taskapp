@@ -1,0 +1,15 @@
+.card-neutral {
+    border-top: 4px solid #9e9e9e;
+}
+
+.card-pending {
+    border-top: 4px solid #fdd835;
+}
+
+.card-error {
+    border-top: 4px solid #f44336;
+}
+
+.card-success {
+    border-top: 4px solid #43a047;
+}
